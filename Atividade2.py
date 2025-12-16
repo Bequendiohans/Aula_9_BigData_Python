@@ -1,14 +1,14 @@
 
-def imc_alunos(a,p):
-    imc = p/(a**2)
+def imc_alunos(a, p):
+    imc = p / (a**2)
     print(f'Seu IMC é igual a: {imc:.2f}')
     return imc
 
 
-altura = float(input('Informe sua altura: '))
-peso = float(input('informe seu peso: '))
+altura = float(input('Informe sua altura em metros: '))
+peso = float(input('informe seu peso em kg: '))
 
-massa_corpo = imc_alunos(altura,peso)
+massa_corpo = imc_alunos(altura, peso)
 
 match massa_corpo:
     case m if m <= 16.9:
